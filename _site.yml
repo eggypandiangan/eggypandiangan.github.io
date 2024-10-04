@@ -5,8 +5,12 @@ description: |
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
-      href: index.html
     - text: "About"
-      href: about.html
+      href: index.html
+    - text: "Project Gallery"
+      href: project.html
+    - text: "Session"
+      href: session.html
+    - text: "Climate Variability Division"
+      href: 'https://www.linkedin.com/in/eggy-pandiangan/ target="_blank"'
 output: distill::distill_article

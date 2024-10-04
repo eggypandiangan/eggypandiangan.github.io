@@ -1,0 +1,10 @@
+---
+title: "Several Sample Projects"
+description: |
+  Here are some examples of projects that have been created.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+

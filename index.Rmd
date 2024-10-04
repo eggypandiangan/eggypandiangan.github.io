@@ -6,7 +6,7 @@ links:
     url: 'https://www.linkedin.com/in/eggy-pandiangan/ target="_blank"'
   - label: '<i class="fa-brands fa-researchgate"></i> ResearchGate'
     url: 'https://www.researchgate.net/profile/Alexander-Pandiangan target="_blank"'
-  - label: '<i class="fa-brands fa-google-scholar"></i> GScholar'
+  - label: '<i class="fa-solid fa-graduation-cap"></i> GoogleScholar'
     url: 'https://scholar.google.com/citations?user=HadQzlEAAAAJ&hl=en target="_blank"'
   - label: '<i class="fa-brands fa-github"></i> GitHub'
     url: 'https://github.com/eggypandiangan target="_blank"'
@@ -16,7 +16,7 @@ links:
     url: 'https://www.facebook.com/EggyPandiangan/ target="_blank"'
   - label: '<i class="fa-brands fa-youtube"></i> YouTube'
     url: 'https://www.youtube.com/EggyPandiangan target="_blank"'
-  - label: '<i class="fa-regular fa-envelope"></i> Email'
+  - label: '<i class="fa-regular fa-envelope"></i> eggy.pandiangan@gmail.com'
     url: 'https://mail.google.com/mail/?view=cm&to=eggy.pandiangan@gmail.com target="_blank"'
 output:
   postcards::trestles
@@ -25,22 +25,17 @@ site: distill::distill_website
 
 ## Biography
 
-Frank Hermosillo studies neural networks and their applications at Google 
-Brain. His research focuses on differentiable network pruning approximation and 
-decentralized gradient inversion mechanics. He frequently collaborates with 
-researchers who study machine learning, computer vision, and cognitive science.
-His work has been featured in WIRED, The Atlantic, Newsweek, and The New York 
-Times Magazine.
+I am a professional working in the field of climate analysis and prediction at a government institution. In my work, I apply my expertise in data science, utilizing programming languages such as R and Python to process and analyze data, including spatial data, which is often my primary focus. Additionally, I have a deep interest in technology, particularly in exploring Linux as the operating system I frequently use for various computational tasks. Outside of work, I balance my life by playing music, especially the guitar, and staying active through running. This combination of interests in technology, music, and sports helps me grow both professionally and personally. If you'd like to download my CV, you can click [this link](images/Eggy_CV.pdf){target="_blank"}.
 
 $~$
 
 ## Education
 
-[**Bandung Institute of Technology**](https://www.itb.ac.id/) | Bandung | M.Sc.
+[**Bandung Institute of Technology**](https://www.itb.ac.id/){target="_blank"} | Bandung | M.Sc.
 
 M.Sc. in Earth Science (Atmospheric Science) | July 2020 - October 2022
 
-[**State College of Meteorology Climatology And Geophysics**](https://stmkg.ac.id/) | Bintaro | B.A.S
+[**State College of Meteorology Climatology And Geophysics**](https://stmkg.ac.id/){target="_blank"} | Bintaro | B.A.S
 
 B.A.S. in Climate Science | September 2013 - October 2018
 
@@ -48,9 +43,9 @@ $~$
 
 ## Experience
 
-[**BMKG Headquarters**](https://bmkg.go.id) | Climate Forecaster and Analyst | January 2018 - Present
+[**BMKG Headquarters**](https://bmkg.go.id){target="_blank"} | Climate Forecaster and Analyst | January 2018 - Present
 
-[**BMKG Regional IV Makassar**](https://bbmkg4.com/) | Weather & Climate Observer | November 2014 - October 2015
+[**BMKG Regional IV Makassar**](https://bbmkg4.com/){target="_blank"} | Weather & Climate Observer | November 2014 - October 2015
 
 $~$
 

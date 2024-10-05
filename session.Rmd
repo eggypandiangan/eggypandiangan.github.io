@@ -1,7 +1,6 @@
 ---
 title: "Several Sessions"
-description: |
-  Here are some of the materials that can be learned.
+description: "Here are some of the materials that can be learned."
 ---
 
 ```{r setup, include=FALSE}

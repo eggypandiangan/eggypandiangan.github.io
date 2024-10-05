@@ -49,7 +49,9 @@ $~$
 
 $~$
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+**Indonesia Monthly Rainfall Prediction**
+
+```{r echo=FALSE, fig.align='center', out.width="100%",message=FALSE, warning=FALSE}
 library("leaflet")
 library("dplyr")
 leaflet() %>%
@@ -57,3 +59,14 @@ leaflet() %>%
   addMarkers(lng=174.768, lat=-36.852,
              popup="The birthplace of R")
 ```
+
+$~$
+
+**An explanation of climate modeling**
+
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+library(vembedr)
+embed_youtube(id = 'https://www.youtube.com/watch?v=rl_MRcYsM1M&list=PL_cuIb7hx5lihu3Wq605u6kVGltXgEfDt', ratio = c("16by9", "4by3"),frameborder = 0, width = 1000)
+```
+
+ 

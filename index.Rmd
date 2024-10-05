@@ -25,7 +25,7 @@ site: distill::distill_website
 
 ## Biography
 
-I am a professional working in the field of climate analysis and prediction at a government institution. In my work, I apply my expertise in data science, utilizing programming languages such as R and Python to process and analyze data, including spatial data, which is often my primary focus. Additionally, I have a deep interest in technology, particularly in exploring Linux as the operating system I frequently use for various computational tasks. Outside of work, I balance my life by playing music, especially the guitar, and staying active through running. This combination of interests in technology, music, and sports helps me grow both professionally and personally. If you'd like to download my CV, you can click [this link](images/Eggy_CV.pdf){target="_blank"}.
+I work in the field of climate analysis and prediction at a government institution. In my work, I apply my expertise in data science, utilizing programming languages such as R and Python to process and analyze data, including spatial data, which is often my primary focus. Additionally, I have a deep interest in technology, particularly in exploring Linux as the operating system I frequently use for various computational tasks. Outside of work, I balance my life by playing music, especially the guitar, and staying active through running. This combination of interests in technology, music, and sports helps me grow both professionally and personally. If you'd like to download my CV, you can click [this link](images/Eggy_CV.pdf){target="_blank"}.
 
 $~$
 

@@ -3,8 +3,10 @@ title: "Eggy Pandiangan Personal Website"
 description: |
   Alexander Eggy Christian Pandiangan
 output_dir: "docs"
-favicon: iamges/favicon.ico
+favicon: images/favicon.ico
 navbar:
+  logo:
+    image: images/brain.png
   right:
     - text: 'About'
       href: index.html
@@ -13,5 +15,6 @@ navbar:
     - text: 'Session'
       href: session.html
     - text: "Climate Variability Division"
-      href: 'https://www.linkedin.com/in/eggy-pandiangan/ target="_blank"'
+      href: 'https://www.linkedin.com/in/eggy-pandiangan/'
+      target: _blank
 output: distill::distill_article

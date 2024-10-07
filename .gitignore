@@ -6,4 +6,6 @@ _site.yml
 index.Rmd
 project.Rmd
 session.Rmd
+research.Rmd
+publication.Rmd
 images/

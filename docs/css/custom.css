@@ -1,0 +1,22 @@
+/* Make the TOC sticky */
+#toc {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* Adjust this value based on your preference */
+  max-height: 90vh; /* Prevent the TOC from overflowing the page */
+  overflow-y: auto;
+}
+
+/* Customize the look of the TOC */
+#toc ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#toc a {
+  text-decoration: none;
+}
+
+#toc a:hover {
+  text-decoration: underline;
+}

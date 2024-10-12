@@ -1,0 +1,48 @@
+/* Define a new grid layout that includes the TOC */
+d-article {
+  display: grid;
+  grid-template-columns: [screen-start] 220px 5% [text-start kicker-end] 1fr [text-end gutter-start] 5% [middle-end] 1fr [page-end gutter-end] 1fr [screen-end];
+  grid-column-gap: 10%;
+}
+
+/* Make the TOC sticky */
+#TOC {
+  grid-column: 1; /* Place TOC in the first column */
+  position: sticky; /* Make the TOC sticky */
+  top: 20px; /* Position the TOC 20px from the top when sticky */
+  z-index: 50; /* Ensure TOC is on top */
+  background: #ebebeb; /* Background for better visibility */
+  padding: 10px; /* Optional padding */
+  border-radius: 5px; /* Optional rounded corners */
+  width: 220px; /* Set a fixed width for TOC */
+  height: auto; /* Let height adjust based on content */
+  overflow-y: auto; /* Scrollable TOC if needed */
+  box-sizing: border-box; /* Ensure padding doesn’t affect the width */
+}
+
+/* Adjust content width and layout */
+.main-container {
+  grid-column: 3 / span 3; /* Make main content span across multiple columns */
+  padding: 20px; /* Optional padding around the text */
+}
+
+/* Responsive design: adjust for smaller screens */
+@media screen and (max-width: 900px) {
+  #TOC {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  d-article {
+    grid-template-columns: [screen-start] 1fr [screen-end];
+  }
+
+  .main-container {
+    grid-column: 1;
+    width: 100%;
+  }
+}

@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; }
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Best Rainfall Prediction Model Based on Skill Score"]},{"type":"character","attributes":{},"value":["This content contains information and techniques in determining the best prediction model using the skill score method."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Eggy Pandiangan"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2024-10-10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Best Rainfall Prediction Model Based on Skill Score"]},{"type":"character","attributes":{},"value":["This content contains information and techniques in determining the best prediction model using the skill score method."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Eggy Pandiangan"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2024-10-10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["custom.css"]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -6938,6 +6938,7 @@ distill-header .nav a {
   <!--radix_placeholder_site_in_header-->
 <!--/radix_placeholder_site_in_header-->
 
+  <style type="text/css">html {scroll-behavior: smooth;zoom: 0.9; }d-article {contain: none;}#TOC {position: fixed; top: 50%; left: 0px; transform: translateY(-50%); z-index: 50; background: #ebebeb; padding: 10px; border-radius: 5px; width: 220px; height: auto; overflow-y: auto; box-sizing: border-box; }.main-container {margin-left: 240px; width: 85%; max-width: 1800px; padding: 20px; }@media screen and (max-width: 900px) {#TOC {position: relative; top: auto; left: auto; width: auto; height: auto; margin: 0 auto; }}</style>
 
 </head>
 
@@ -6992,60 +6993,22 @@ distill-header .nav a {
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#evaluation-of-climate-model" id="toc-evaluation-of-climate-model">EVALUATION OF CLIMATE MODEL</a></li>
-<li><a href="#evaluation-method-of-climate-model" id="toc-evaluation-method-of-climate-model">EVALUATION METHOD OF CLIMATE MODEL</a></li>
-<li><a href="#evaluation-of-rainfall-prediction-for-season-onset-determination" id="toc-evaluation-of-rainfall-prediction-for-season-onset-determination">EVALUATION OF RAINFALL PREDICTION FOR SEASON ONSET DETERMINATION</a></li>
-<li><a href="#rainfall-weighting" id="toc-rainfall-weighting">RAINFALL WEIGHTING</a></li>
-<li><a href="#simulation-of-skill-score-method" id="toc-simulation-of-skill-score-method">SIMULATION OF SKILL SCORE METHOD</a></li>
+<li><a href="#introduction" id="toc-introduction">1. INTRODUCTION</a></li>
+<li><a href="#method-of-evaluation" id="toc-method-of-evaluation">2. METHOD OF EVALUATION</a></li>
+<li><a href="#evaluation-of-rainfall-prediction-for-season-onset-determination" id="toc-evaluation-of-rainfall-prediction-for-season-onset-determination">3. EVALUATION OF RAINFALL PREDICTION (FOR SEASON ONSET DETERMINATION)</a></li>
+<li><a href="#rainfall-weighting" id="toc-rainfall-weighting">4. RAINFALL WEIGHTING</a></li>
+<li><a href="#simulation-of-skill-score-method" id="toc-simulation-of-skill-score-method">5. SIMULATION OF SKILL SCORE METHOD</a></li>
 </ul>
 </nav>
 </div>
-<div class="layout-chunk" data-layout="l-body">
-<style type="text/css">
-<style>
-html {
-scroll-behavior: smooth;
-}
-body {
-width: 100%; 
-margin: 0 auto; 
-padding: 0; 
-}
-d-article {
-contain: none;
-max-width: 180%; 
-margin: 0 auto; 
-padding: 0 5px; 
-box-sizing: border-box; 
-}
-#TOC {
-position: fixed;
-top: 50%; 
-left: 0; 
-transform: translateY(-50%); 
-z-index: 10;
-background: #fff; 
-padding: 10px; 
-width: 10%; 
-border-radius: 5px; 
-}
-
-@media screen and (max-width: 768px) {
-#TOC {
-position: relative; 
-}
-}
-</style>
-</style>
-</div>
-<h1 id="evaluation-of-climate-model">EVALUATION OF CLIMATE MODEL</h1>
+<h1 id="introduction">1. INTRODUCTION</h1>
 <h2 id="definition-and-objective-of-climate-model-evaluation">Definition and Objective of Climate Model Evaluation</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <h2 id="climate-model-evaluation-objectives">Climate Model Evaluation Objectives</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<h1 id="evaluation-method-of-climate-model">EVALUATION METHOD OF CLIMATE MODEL</h1>
-<h2 id="several-methods-of-climate-model-evaluation">Several Methods of Climate Model Evaluation</h2>
+<h1 id="method-of-evaluation">2. METHOD OF EVALUATION</h1>
+<h2 id="methods-of-climate-model-evaluation">Methods of Climate Model Evaluation</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h2 id="skill-score-method">Skill Score Method</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -7057,21 +7020,21 @@ Learn more about using Distill at <a href="https://rstudio.github.io/distill" cl
 <span>  <span class="fu"><a href="https://rstudio.github.io/leaflet/reference/map-layers.html">addMarkers</a></span><span class="op">(</span>lng<span class="op">=</span><span class="fl">174.768</span>, lat<span class="op">=</span><span class="op">-</span><span class="fl">36.852</span>,</span>
 <span>    popup<span class="op">=</span><span class="st">&quot;The birthplace of R&quot;</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-20beca14ba2b1236f074" style="width:624px;height:384px;"></div>
-<script type="application/json" data-for="htmlwidget-20beca14ba2b1236f074">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-72d02aba636520a5df0b" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-72d02aba636520a5df0b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
 </div>
-<h1 id="evaluation-of-rainfall-prediction-for-season-onset-determination">EVALUATION OF RAINFALL PREDICTION FOR SEASON ONSET DETERMINATION</h1>
+<h1 id="evaluation-of-rainfall-prediction-for-season-onset-determination">3. EVALUATION OF RAINFALL PREDICTION (FOR SEASON ONSET DETERMINATION)</h1>
 <h2 id="evaluation-of-rainfall-prediction-at-zom-9120">Evaluation of Rainfall Prediction at ZOM 9120</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h2 id="interpretation-of-skill-score-evaluation">Interpretation of Skill Score Evaluation</h2>
 <p>Boxplot dari SS.
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<h1 id="rainfall-weighting">RAINFALL WEIGHTING</h1>
+<h1 id="rainfall-weighting">4. RAINFALL WEIGHTING</h1>
 <h2 id="weighting-of-rainfall-based-on-skill-score">Weighting of Rainfall based on Skill Score</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h2 id="rainfall-prediction-at-zom-9120-based-on-skill-score-weight">Rainfall Prediction at ZOM 9120 based on Skill Score Weight</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<h1 id="simulation-of-skill-score-method">SIMULATION OF SKILL SCORE METHOD</h1>
+<h1 id="simulation-of-skill-score-method">5. SIMULATION OF SKILL SCORE METHOD</h1>
 <h2 id="skill-score-calculation-practice">Skill Score Calculation Practice</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h2 id="weighted-rainfall-prediction-calculation-practice">Weighted Rainfall Prediction Calculation Practice</h2>

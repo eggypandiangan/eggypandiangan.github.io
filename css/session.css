@@ -3,6 +3,14 @@ html {
   zoom: 0.9;  /* Zooms out the entire page by 90%. You can adjust the percentage */
 }
 
+.thumbnail {
+    padding: 0px!important;
+    margin: 0px!important;
+    max-width: 20%!important;
+    height: auto!important;
+    vertical-align: text-top!important;
+}
+
 d-title {
     display: block;
     width: 80%;
@@ -18,7 +26,7 @@ d-byline {
 d-article {
   contain: none;
   display: block;
-  width: 90%;
+  width: 80%;
   margin-left: 13%;
 }
 

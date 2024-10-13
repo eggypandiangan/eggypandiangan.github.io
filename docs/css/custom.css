@@ -1,22 +1,58 @@
-/* Make the TOC sticky */
-#toc {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px; /* Adjust this value based on your preference */
-  max-height: 90vh; /* Prevent the TOC from overflowing the page */
-  overflow-y: auto;
+html {
+  scroll-behavior: smooth;
+  zoom: 0.9;  /* Zooms out the entire page by 90%. You can adjust the percentage */
 }
 
-/* Customize the look of the TOC */
-#toc ul {
-  padding-left: 0;
-  list-style-type: none;
+d-title {
+    display: block;
+    width: 88%;
+    margin-left: 13%;
+  }
+  
+d-byline {
+    display: block;
+    width: 80%;
+    margin-left: 13%;
+  }
+
+d-article {
+  contain: none;
+  display: block;
+  width: 45%;
+  margin-left: 13%;
 }
 
-#toc a {
-  text-decoration: none;
+#TOC {
+  position: fixed;        /* Fix TOC in place */
+  top: 50%;               /* Vertically center the TOC */
+  left: 0px;              /* Position TOC flush against the left edge */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  z-index: 50;            /* Ensure TOC is on top */
+  background: #ebebeb;    /* Background for better visibility */
+  padding: 10px;          /* Optional padding */
+  border-radius: 5px;     /* Optional rounded corners */
+  width: 12%;           /* Set a fixed width for TOC */
+  height: auto;           /* Let height adjust based on content */
+  overflow-y: auto;       /* Scrollable TOC if needed */
+  box-sizing: border-box; /* Ensure padding doesn’t affect the width */
 }
 
-#toc a:hover {
-  text-decoration: underline;
+/* Adjust content width to make it wider */
+.main-container {
+  margin-left: 240px;       /* Keep space for the TOC */
+  width: 85%;               /* Increase the content area width */
+  max-width: 1800px;        /* Optional: Increase the max width of the content */
+  padding: 0px;            /* Optional padding around the text */
+}
+
+/* Hide or reposition TOC for mobile and tablet screens */
+@media screen and (max-width: 900px) {
+  #TOC {
+    position: relative;     /* TOC becomes relative on smaller screens */
+    top: auto;              /* Remove top alignment */
+    left: auto;             /* Remove left alignment */
+    width: auto;            /* Adjust width to fit the screen */
+    height: auto;           /* Adjust height */
+    margin: 0 auto;         /* Center the TOC */
+  }
 }

@@ -86,6 +86,28 @@ code span.vs { color: #20794d; }
 code span.wa { color: #5e5e5e; font-style: italic; } 
 </style>
 
+<style>
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}
+</style>
 
   <!--radix_placeholder_meta_tags-->
 <title>Eggy Pandiangan Personal Website: Best Rainfall Prediction Model Based on Skill Score</title>
@@ -112,10 +134,13 @@ code span.wa { color: #5e5e5e; font-style: italic; }
 <meta property="twitter:description" content="This content contains information and techniques in determining the best prediction model using the skill score method."/>
 
 <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Dynamic documents with r and knitr;citation_publisher=Chapman; Hall/CRC;citation_author=Yihui Xie" />
+  <meta name="citation_reference" content="citation_title=The optimal multimodel ensemble of bias-corrected CMIP5 climate models over china;citation_publisher=American Meteorological Society;citation_volume=21;citation_doi=10.1175/JHM-D-19-0141.1;citation_author=Yuqian Wang Xiaoli Yang;citation_author=Justin Sheffield" />
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Best Rainfall Prediction Model Based on Skill Score"]},{"type":"character","attributes":{},"value":["This content contains information and techniques in determining the best prediction model using the skill score method."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Eggy Pandiangan"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2024-10-10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["custom.css"]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Best Rainfall Prediction Model Based on Skill Score"]},{"type":"character","attributes":{},"value":["This content contains information and techniques in determining the best prediction model using the skill score method."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Eggy Pandiangan"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["2024-10-10"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float","css"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["custom.css"]}]}]},{"type":"character","attributes":{},"value":["biblio.bib"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -6938,7 +6963,7 @@ distill-header .nav a {
   <!--radix_placeholder_site_in_header-->
 <!--/radix_placeholder_site_in_header-->
 
-  <style type="text/css">html {scroll-behavior: smooth;zoom: 0.9; }d-title {display: block;width: 88%;margin-left: 13%;}d-byline {display: block;width: 80%;margin-left: 13%;}d-article {contain: none;display: block;width: 80%;margin-left: 13%;}#TOC {position: fixed; top: 50%; left: 0px; transform: translateY(-50%); z-index: 50; background: #ebebeb; padding: 10px; border-radius: 5px; width: 12%; height: auto; overflow-y: auto; box-sizing: border-box; }.main-container {margin-left: 240px; width: 85%; max-width: 1800px; padding: 0px; }@media screen and (max-width: 900px) {#TOC {position: relative; top: auto; left: auto; width: auto; height: auto; margin: 0 auto; }}</style>
+  <style type="text/css">html {scroll-behavior: smooth;zoom: 0.9; }d-title {display: block;width: 88%;margin-left: 13%;}d-byline {display: block;width: 80%;margin-left: 13%;}d-article {contain: none;display: block;width: 80%;margin-left: 13%;}#TOC {position: fixed; top: 50%; left: 0px; transform: translateY(-50%); z-index: 50; background: transparent; padding: 10px; border-radius: 5px; width: 12%; height: auto; overflow-y: auto; box-sizing: border-box; }.main-container {margin-left: 240px; width: 85%; max-width: 1800px; padding: 0px; }@media screen and (max-width: 900px) {#TOC {position: relative; top: auto; left: auto; width: auto; height: auto; margin: 0 auto; }}</style>
 
 </head>
 
@@ -7003,13 +7028,13 @@ distill-header .nav a {
 </div>
 <h1 id="introduction">1. INTRODUCTION</h1>
 <h2 id="definition-and-objective-of-climate-model-evaluation">Definition and Objective of Climate Model Evaluation</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<p>Lorem Ipsum is <span class="citation" data-cites="xie2015">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <h2 id="climate-model-evaluation-objectives">Climate Model Evaluation Objectives</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h1 id="method-of-evaluation">2. METHOD OF EVALUATION</h1>
 <h2 id="methods-of-climate-model-evaluation">Methods of Climate Model Evaluation</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>Lorem Ipsum is <span class="citation" data-cites="Yang">(<a href="#ref-Yang" role="doc-biblioref">Xiaoli Yang and Sheffield 2020</a> et al)</span> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <h2 id="skill-score-method">Skill Score Method</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -7020,8 +7045,8 @@ Learn more about using Distill at <a href="https://rstudio.github.io/distill" cl
 <span>  <span class="fu"><a href="https://rstudio.github.io/leaflet/reference/map-layers.html">addMarkers</a></span><span class="op">(</span>lng<span class="op">=</span><span class="fl">174.768</span>, lat<span class="op">=</span><span class="op">-</span><span class="fl">36.852</span>,</span>
 <span>    popup<span class="op">=</span><span class="st">&quot;The birthplace of R&quot;</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-0166f9d56246e93a6180" style="width:624px;height:384px;"></div>
-<script type="application/json" data-for="htmlwidget-0166f9d56246e93a6180">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-03cb2291e12c2968e4a0" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-03cb2291e12c2968e4a0">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <h1 id="evaluation-of-rainfall-prediction-for-season-onset-determination">3. EVALUATION OF RAINFALL PREDICTION (FOR SEASON ONSET DETERMINATION)</h1>
 <h2 id="evaluation-of-rainfall-prediction-at-zom-9120">Evaluation of Rainfall Prediction at ZOM 9120</h2>
@@ -7040,6 +7065,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <h2 id="weighted-rainfall-prediction-calculation-practice">Weighted Rainfall Prediction Calculation Practice</h2>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Yang" class="csl-entry" role="listitem">
+Xiaoli Yang, Yuqian Wang, Xiaohan Yu, and Justin Sheffield. 2020. <span>“The Optimal Multimodel Ensemble of Bias-Corrected CMIP5 Climate Models over China.”</span> <em>Journal of Hydrometeorology</em> 21 (4): 845–63. <a href="https://doi.org/10.1175/JHM-D-19-0141.1">https://doi.org/10.1175/JHM-D-19-0141.1</a>.
+</div>
+<div id="ref-xie2015" class="csl-entry" role="listitem">
+Xie, Yihui. 2015. <em>Dynamic Documents with r and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -7051,7 +7084,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="references">References</h3>
+  <div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

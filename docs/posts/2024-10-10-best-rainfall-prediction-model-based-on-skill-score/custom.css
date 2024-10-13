@@ -28,7 +28,7 @@ d-article {
   left: 0px;              /* Position TOC flush against the left edge */
   transform: translateY(-50%); /* Perfect vertical centering */
   z-index: 50;            /* Ensure TOC is on top */
-  background: #ebebeb;    /* Background for better visibility */
+  background: transparent;    /* Background for better visibility */
   padding: 10px;          /* Optional padding */
   border-radius: 5px;     /* Optional rounded corners */
   width: 12%;           /* Set a fixed width for TOC */

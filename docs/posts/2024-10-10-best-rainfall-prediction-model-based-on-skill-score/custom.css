@@ -3,8 +3,23 @@ html {
   zoom: 0.9;  /* Zooms out the entire page by 90%. You can adjust the percentage */
 }
 
+d-title {
+    display: block;
+    width: 88%;
+    margin-left: 13%;
+  }
+  
+d-byline {
+    display: block;
+    width: 80%;
+    margin-left: 13%;
+  }
+
 d-article {
   contain: none;
+  display: block;
+  width: 80%;
+  margin-left: 13%;
 }
 
 #TOC {
@@ -16,7 +31,7 @@ d-article {
   background: #ebebeb;    /* Background for better visibility */
   padding: 10px;          /* Optional padding */
   border-radius: 5px;     /* Optional rounded corners */
-  width: 220px;           /* Set a fixed width for TOC */
+  width: 12%;           /* Set a fixed width for TOC */
   height: auto;           /* Let height adjust based on content */
   overflow-y: auto;       /* Scrollable TOC if needed */
   box-sizing: border-box; /* Ensure padding doesn’t affect the width */
@@ -27,7 +42,7 @@ d-article {
   margin-left: 240px;       /* Keep space for the TOC */
   width: 85%;               /* Increase the content area width */
   max-width: 1800px;        /* Optional: Increase the max width of the content */
-  padding: 20px;            /* Optional padding around the text */
+  padding: 0px;            /* Optional padding around the text */
 }
 
 /* Hide or reposition TOC for mobile and tablet screens */

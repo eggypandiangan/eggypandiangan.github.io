@@ -3,17 +3,31 @@ html {
   zoom: 0.9;  /* Zooms out the entire page by 90%. You can adjust the percentage */
 }
 
+#references {
+    display: block;
+    width: 10%;      /* Aligning with the article width */
+    margin-left: 13%; /* Same left margin as the article */
+    margin-top: 10px; /* Optional: Adds some spacing above the references */
+}
+
+d-appendix {
+    display: block;
+    width: 80%;      /* Aligning with the article width */
+    margin-left: 0%; /* Same left margin as the article */
+    margin-top: 10px; /* Optional: Adds some spacing above the references */
+}
+
 d-title {
     display: block;
     width: 88%;
     margin-left: 13%;
-  }
-  
+}
+
 d-byline {
     display: block;
     width: 80%;
     margin-left: 13%;
-  }
+}
 
 d-article {
   contain: none;

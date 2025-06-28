@@ -1,4 +1,5 @@
 Version: 1.0
+ProjectId: 45c6464b-ce6f-42ca-8223-473124bfe09e
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -13,3 +14,5 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
+
+ZoteroLibraries: "My Library"
